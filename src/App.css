@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background: #595959;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.login {
+  width: 100%;
   min-height: 100vh;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.login .logohome{
+  width: 175px;
+  height: 85px;
+  margin-left: 125px;
+  justify-content: center;
+  align-items: center;
+}
+
+.login .loginform{
+  padding: 100px;
+  margin: auto;
+  width: 100%;
+  max-width: 600px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: radial-gradient(
+    ellipse at left bottom,
+    rgb(90, 90, 90) 0%,
+    rgba(165, 165, 165, 0.9) 59%,
+    rgba(212, 212, 212, 0.9) 100%
+  );
+  box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
+}
+
+.login .loginform .label{
   color: white;
+  margin: 10px 0;
+  display: block;
+  font-size: 22px;
+  line-height: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.login .loginform .inputform {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  letter-spacing: 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login .loginform .btnform {
+  width: 100%;
+  padding: 24px 0;
+  justify-content: center;
+}
+
+.login .loginform .btnform .p {
+  margin: 14px 0 0 0;
+  text-align: right;
+  color:#FFFFFF;
+  justify-content: center;
+}
+
+.login .loginform .btnform .p .span {
+  color: yellow;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+  justify-content: center;
+}
+
+.login .loginform .btnform .p .span:hover {
+  color: red;
+}
+
+.login .loginform .errorMsg {
+  color: red;
+  font-size: 16px;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(
+    ellipse at left bottom,
+    rgb(90, 90, 90) 0%,
+    rgba(165, 165, 165, 0.9) 59%,
+    rgba(212, 212, 212, 0.9) 100%
+  );
+}
+
+.hero nav {
+  background: #595959;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero nav h2 {
+  color: #fff;
+}
+
+.hero nav button {
+  width: 86px;
+  padding: 8px 0;
+  background: #404040;
+}
+
+.hero .label{
+  color: white;
+  margin: 10px 0;
+  margin-top: 50px;
+  display: block;
+  font-size: 22px;
+  line-height: 1;
+  text-align: center;
 }
